@@ -12,7 +12,7 @@
 <!--Navbar-->
   <div class="b-example-divider "></div>
 
-  <header class="p-3 mb-3 border-bottom fixed-top bg-light">
+  <header class="p-2 mb-2 border-bottom fixed-top bg-light">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
@@ -21,9 +21,9 @@
         <img src="img/spotify.png" width="110px" height="35" alt="Spotify">
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-4 link-secondary">Premium</a></li>
-          <li><a href="#" class="nav-link px-4 link-dark">Support</a></li>
-          <li><a href="#" class="nav-link px-4 link-dark">Download</a></li>
+          <li><a href="#" id="menu" class="nav-link px-4 link-secondary">Premium</a></li>
+          <li><a href="#" id="menu"  class="nav-link px-4 link-dark">Support</a></li>
+          <li><a href="#" id="menu" class="nav-link px-4 link-dark">Download</a></li>
         </ul>
 
 
@@ -49,15 +49,15 @@
 
 
 
-  
+ 
   <!--header-->
-  <div class="b-example-divider"></div>
-
-  <div class=" backimg container col-md-xxl-9 px-5 py-5">
+  <div class="b-example-divider "></div>
+  <div class="container align-items-center col-md-9">
+  <div class=" backimg container col-md-xxl-9 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-2  ">
       <div class="col-10 col-sm-8 col-lg-6">
 
-        <img src="img/new.svg" class="p-4 d-block mx-lg-auto img-fluid " alt="Bootstrap Themes" width="430" height="410" loading="lazy">
+        <img id="cover" src="img/new.svg" class="p-4 d-block mx-lg-auto img-fluid " alt="Bootstrap Themes" width="430" height="410" loading="lazy">
       </div>
       <div class="col-lg-6">
         <h1 class="display-4 fw-bold lh-1 mb-3">Get Premium free for 1 month
@@ -65,79 +65,20 @@
         <p class="lead">Just EGP 49.99/month after. Cancel anytime.
         </p>
         <p class="text-muted">Terms and conditions apply. 1 month free not available for users who have already tried Premium.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <!-- Button to Open the Modal -->
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
-Get Started</button>
-
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <!-- Modal body -->
-      <div  class="modal-body">
-        <div  class="b-example-divider"></div>
-
-        <div  class= " modal modal-signin position-static d-block bg-light " tabindex="-1" role="dialog" id="modalSignin">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content rounded-5 shadow">
-              <div class="modal-header p-2 pb-4 border-bottom-0">
-                <!-- <h5 class="modal-title">Modal title</h5> -->
-                <h2 class="fw-bold mb-0">Sign up for free</h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-        
-              <div class="modal-body p-5 pt-0">
-                <form class="">
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
-                  </div>
-                  <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
-                  <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
-                  <hr class="my-4">
-                  <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
-                  <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
-                    <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
-                    Sign up with Twitter
-                  </button>
-                  <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
-                    <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
-                    Sign up with Facebook
-                  </button>
-                  <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
-                    <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
-                    Sign up with GitHub
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-              </div>
 
 
-    </div>
-  </div>
-</div>
+          <button type="button" class="btn btn-outline-success btn-lg px-4 m-2">Get Started</button>
+          <button type="button" class="btn btn-outline-danger btn-lg px-4 m-2">View Plans</button>
 
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">View Plans</button>
         </div>
       </div>
     </div>
 
 <!--Content-->
-<main class=" py-5 px-5  bg-success text-white align-items-center   " style="height: 250px; ">
+<main class=" py-3 px-3  bg-success text-white align-items-center text-center     " style="height: 300px; ">
+  <div>
+    <iframe src="https://open.spotify.com/embed/track/4Zv6sGqql0ASS1yMaBGBz0?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  </div>
   <h1>Introducing Premium Mini
   </h1>
   <p class="lead">30 song downloads and unlimited ad-free music listening, on 1 mobile device.
