@@ -1,7 +1,16 @@
 body{
   height: 1000px;
-}
+  font-family: 'Hind Siliguri', sans-serif;}
 
-.twitter{
-  background-color: blue;
+  #menu{
+color: grey;  }
+
+#menu:hover{
+  color: green;  }
+
+  #cover{
+transition: 0.5s all;  }
+
+#cover:hover{
+  transform: scale(1.1);
 }
