@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/all.min.css" rel="stylesheet">
+<title>Website</title>
+</head>
+<body>
+
+
+<!--Navbar-->
+  <div class="b-example-divider "></div>
+
+  <header class="p-3 mb-3 border-bottom fixed-top bg-light">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <img src="img/spotify.png" width="110px" height="35" alt="Spotify">
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-4 link-secondary">Premium</a></li>
+          <li><a href="#" class="nav-link px-4 link-dark">Support</a></li>
+          <li><a href="#" class="nav-link px-4 link-dark">Download</a></li>
+        </ul>
+
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  
+  <!--header-->
+  <div class="b-example-divider"></div>
+
+  <div class=" backimg container col-md-xxl-9 px-5 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-2  ">
+      <div class="col-10 col-sm-8 col-lg-6">
+
+        <img src="img/new.svg" class="p-4 d-block mx-lg-auto img-fluid " alt="Bootstrap Themes" width="430" height="410" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold lh-1 mb-3">Get Premium free for 1 month
+        </h1>
+        <p class="lead">Just EGP 49.99/month after. Cancel anytime.
+        </p>
+        <p class="text-muted">Terms and conditions apply. 1 month free not available for users who have already tried Premium.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+Get Started</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div  class="modal-body">
+        <div  class="b-example-divider"></div>
+
+        <div  class= " modal modal-signin position-static d-block bg-light " tabindex="-1" role="dialog" id="modalSignin">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-5 shadow">
+              <div class="modal-header p-2 pb-4 border-bottom-0">
+                <!-- <h5 class="modal-title">Modal title</h5> -->
+                <h2 class="fw-bold mb-0">Sign up for free</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+        
+              <div class="modal-body p-5 pt-0">
+                <form class="">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Sign up</button>
+                  <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                  <hr class="my-4">
+                  <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                    <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
+                    Sign up with Twitter
+                  </button>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" type="submit">
+                    <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
+                    Sign up with Facebook
+                  </button>
+                  <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+                    <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
+                    Sign up with GitHub
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+              </div>
+
+
+    </div>
+  </div>
+</div>
+
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">View Plans</button>
+        </div>
+      </div>
+    </div>
+
+<!--Content-->
+<main class=" py-5 px-5  bg-success text-white align-items-center   " style="height: 250px; ">
+  <h1>Introducing Premium Mini
+  </h1>
+  <p class="lead">30 song downloads and unlimited ad-free music listening, on 1 mobile device.
+  </p>
+  <p class="lead">
+    <button type="button" class="btn btn-outline-light">GET 1 WEEK FOR EGP 9.90</button>
+  </p>
+  <p class="text-light">Terms and conditions apply.
+  </p>
+</main>
+
+<!--Why go Premium?-->
+<div class=" text-center container px-0 py-5" id="featured-3">
+  <h2 >Why go Premium?
+  </h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+    <div class="feature col">
+        <img src="img/pre1.png"  style="height: 100px; width: 100px;" class="align-items-center d-m-flex">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+      <h2>Unlimited skips.
+
+      </h2>
+      <p class="text-muted">Just hit next.
+
+      </p>
+    </div>
+    <div class="feature col">
+      <img src="img/pre2.png" style="height: 100px; width: 100px;" class="align-items-center d-m-flex">
+      <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+    <h2>Play any song.
+
+    </h2>
+    <p class="text-muted">Even on mobile.
+
+
+    </p>
+  </div>
+
+  <div class="feature col">
+    <img src="img/pre3.png" style="height: 100px; width: 100px;" class="align-items-center d-m-flex">
+    <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+  <h2>Download music
+  </h2>
+  <p class="text-muted">Listen anywhere.
+
+  </p>
+</div>
+
+<div class="feature col">
+  <img src="img/pre4.png" style="height: 100px; width: 100px;" class="align-items-center d-m-flex">
+  <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+<h2>No ads
+</h2>
+<p class="text-muted">Listen anywhere
+
+</p>
+</div>
+
+  </div>
+</div>
+
+<!--Pick your Premium-->
+
+<div class="container">
+  <div class="pricing-header p-1 pb-md-4 mx-auto text-center">
+    <h1 class="display-4 fw-bold">Pick your Premium
+    </h1>
+    <p class="fs-5 text-muted">Listen without limits on your phone, speaker, and other devices.
+    </p>
+  </div>
+
+<main>
+  <div class=" p-2 row row-cols-1 row-cols-md-4 mb-3 text-center">
+    <div class="row">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3 bg-success text-light  ">
+          <h4 class="my-0 fw-normal">Mini</h4>
+        </div>
+        <div style="height: 350px;" class="card-body">
+          <h5 class="card-title pricing-card-title">EGP 9.90/week
+            <br>            <br>
+
+          </h5>
+            <ul class=" text-start list-unstyled mt-3 mb-4   ">
+            <li>Listen to music ad-free on mobile
+              
+            </li>
+            <li>Group Session
+            </li>
+            <li>Download 30 songs on 1 mobile device
+            </li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-outline-dark">Get Strarted</button>
+          <a style="font-size: 10px;" class="text-muted" href="#">Terms and conditions apply.</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3 bg-success text-light ">
+          <h4 class="my-0 fw-normal">Individual</h4>
+        </div>
+        <div style="height: 350px;" class="card-body">
+          <h5 class="card-title pricing-card-title">EGP 49.99/month after offer period
+
+
+
+          </h5>
+            <ul class=" text-start list-unstyled mt-3 mb-4   ">
+            <li>Listen to music ad-free on mobile
+              
+            </li>
+            <li>Group Session
+            </li>
+            <li>Download 30 songs on 1 mobile device
+            </li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-outline-dark">Get Strarted</button>
+          <a style="font-size: 10px;" class="text-muted" href="#">Terms and conditions apply.</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3 bg-success text-light ">
+          <h4 class="my-0 fw-normal">Duo</h4>
+        </div>
+        <div style="height: 350px;" class="card-body">
+          <h5 class="card-title pricing-card-title">EGP 64.99/month after offer period
+
+
+          </h5>
+            <ul class=" text-start list-unstyled mt-3 mb-4   ">
+            <li>Listen to music ad-free on mobile
+              
+            </li>
+            <li>Group Session
+            </li>
+            <li>Download 30 songs on 1 mobile device
+            </li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-outline-dark">Get Strarted</button>
+          <a style="font-size: 10px;" class="text-muted" href="#">Terms and conditions apply.</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3 bg-success text-light ">
+          <h4 class="my-0 fw-normal">Family</h4>
+        </div>
+        <div style="height: 350px;" class="card-body">
+          <h5 class="card-title pricing-card-title">EGP 79.99/month after offer period
+
+
+          </h5>
+            <ul class=" text-start list-unstyled mt-3 mb-4   ">
+            <li>Listen to music ad-free on mobile
+              
+            </li>
+            <li>Group Session
+            </li>
+            <li>Download 30 songs on 1 mobile device
+            </li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg btn-outline-dark">Get Strarted</button>
+          <a style="font-size: 10px;" class="text-muted" href="#">Terms and conditions apply.</a>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+
+
+
+<!--Footer-->
+<br>
+<br>
+<br>
+
+<div class="container  align-items-end ">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-3">
+          <h5>COMPANY</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About
+            </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Jobs
+            </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">For the Record
+            </a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2">
+          <h5>COMMUNITIES</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">For Artists
+            </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Developers
+            </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Advertising
+            </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Investors
+            </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Vendors
+            </a></li>
+          </ul>
+        </div>
+        <div class="col-2 align-items-end d-flex">
+          <img style="width: 110px; height: 35px;" src="img/spotify black.jpg" alt="">
+        </div>
+  
+  
+      </div>
+  
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a style="color: #1DA1F2            ;" class="link-dark " href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg><i class="fab fa-twitter fa-lg "></i></a></li>
+          <li class="ms-3"><a style="color: 	#E1306C;" class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg><i class="fab fa-instagram fa-lg"></i></a></li>
+          <li class="ms-3"><a style="color: #4267B2;" class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg><i class="fab fa-facebook fa-lg"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  
+  
+
+        
+      <script src="js/jquery-3.6.0.min.js"></script> 
+      <script src="js/bootstrap.bundle.js"></script>
+      <script src="js/script.js"></script> 
+
+</body>
+
+
+</html>
+
